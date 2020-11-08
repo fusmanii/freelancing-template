@@ -4,6 +4,7 @@ body {
   background-size: cover;
 }
 
+/* Canvas */
 .bg-white {
   background: white;
 }
@@ -38,4 +39,54 @@ body {
   width: 20px;
   height: 20px;
   background: red;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menubar-long {
+  background-color: black;
+  height: 1px;
+  width: 40px;
+  margin: 10px;
+}
+.menubar-short {
+  background-color: black;
+  height: 1px;
+  width: 30px;
+  margin: 10px;
+}
+.social {
+  margin-left: 20px;
+}
+
+/* Sidebar */
+.sidebar-container {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.sidebar-option {
+  list-style: none;
+  height: 3px;
+  width: 30px;
+  margin: 40px;
+}
+.sidebar-link {
+  background-color: black;
+  display: block;
+  height: 100%;
+  width: 30px;
+  transition: 0.3s;
+}
+.sidebar-link--active {
+  width: 50px;
 }
